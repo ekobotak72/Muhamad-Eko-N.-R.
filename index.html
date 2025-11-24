@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Login</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-blur"></div>
+    <div class="container">
+        <div class="profile-section">
+            <img src="pp1.jpeg" alt="Foto Profil" class="profile-img" />
+        </div>
+        <div class="form-section">
+            <h1 class="title">Welcome</h1>
+            <p class="subtitle">Tugas Pemrograman Web</p>
+            <form class="login-form" action="dashboard.html" method="get" onsubmit="return validateLogin()">
+                <label for="usn">Username</label>
+                <input type="text" id="usn" name="usn" required>
+                <label for="pw">Password</label>
+                <input type="password" id="pw" name="pw" required>
+                <button type="submit" class="btn-login">Login</button>
+                <div id="error-msg"></div>
+            </form>
+        </div>
+    </div>
+    <script>
+    function validateLogin() {
+        const usn = document.getElementById('usn').value;
+        const pw = document.getElementById('pw').value;
+        if (usn === "Eko" && pw === "123") {
+            return true; 
+        } else {
+            document.getElementById('error-msg').textContent = "Username atau password salah!";
+            return false; 
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Halaman Profil</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-blur"></div>
+    <div class="neon-abstract"></div>
+    <header>
+        <div class="dashboard-profile">
+            <img src="pp1.jpeg" alt="Profil" class="profile-img" />
+            <div class="profile-info">
+                <h2 class="profile-name">Eko</h2>
+                <p class="profile-role">XI TJKT II | SMK Ma'arif Ngoro</p>
+            </div>
+        </div>
+        <button class="btn-logout" onclick="logout()">Logout</button>
+    </header>
+    <main>
+        <h1 class="dashboard-title">Haloo! </h1>
+        <div class="intro-box">
+  <p>
+    Perkenalkan, Nama saya <b>Muhamad Eko Nur Rohman</b>.<br>
+    Saya siswa kelas 11 dari <b>SMK Ma'arif Ngoro</b>.<br>
+    Saat ini saya sedang belajar dan mengembangkan kemampuan di bidang pemrograman web.<br>
+    <i>“Kesuksesan bukan hanya tentang seberapa pintar kita, tapi tentang seberapa kuat kemauan kita untuk terus belajar dan berusaha.”</i>
+  </p>
+</div>
+
+        <div class="social-buttons">
+            <a href="https://wa.me/qr/37U2HMLBPVY6H1" target="_blank" class="btn-social whatsapp">
+                <span class="icon-wa"></span> WhatsApp
+            </a>
+            <a href="https://www.tiktok.com/@alko_0810?_r=1&_t=ZS-91eeI27I8W1 target="_blank" class="btn-social tiktok">
+                <span class="icon-tt"></span> TikTok
+            </a>
+        </div>
+    </main>
+    <script>
+    function logout() {
+        window.location.href = "index.html";
+    }
+    </script>
+</body>
+</html>
